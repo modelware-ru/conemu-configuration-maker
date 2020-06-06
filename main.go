@@ -86,13 +86,6 @@ func main() {
 
 		data.Commands[i].Percent = int(math.Floor(float64(100*(data.Cols-percentIndex)) / float64(data.Cols-percentIndex+1)))
 
-		//if i == 0 {
-		//	data.Commands[i*data.Cols].Parent = -1
-		//	data.Commands[i*data.Cols].Percent = 100
-		//} else {
-		//	data.Commands[i*data.Cols].Parent = (i - 1) * data.Cols
-		//	data.Commands[i*data.Cols].Percent = int(math.Floor(float64(100*(rows-i)) / float64(rows-i+1)))
-		//}
 		percentIndex++
 		order++
 	}
